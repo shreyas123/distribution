@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rubyzip'
+
 group :development, :test do
   gem 'pry'
 end

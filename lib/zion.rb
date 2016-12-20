@@ -1,7 +1,8 @@
+require 'pry'
 require_relative 'zion/source'
-require_relative 'zion/sentinal'
+require_relative 'zion/sentinel'
 
 module Zion
   autoload :Source,      'zion/source'
-  autoload :Sentinal,    'zion/sentinal'
+  autoload :Sentinel,    'zion/sentinel'
 end

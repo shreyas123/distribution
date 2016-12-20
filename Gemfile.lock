@@ -37,6 +37,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    rubyzip (1.2.0)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
     slop (3.6.0)
@@ -52,6 +53,7 @@ DEPENDENCIES
   rspec
   rspec-html-matchers
   rspec-legacy_formatters
+  rubyzip
   shoulda-matchers
 
 BUNDLED WITH
