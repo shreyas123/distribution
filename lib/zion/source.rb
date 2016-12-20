@@ -13,5 +13,11 @@ module Zion
       uri.query = URI.encode_www_form( params )
       return Net::HTTP.get(uri)
     end
+
+    def inform_zion(params = {})
+      uri = URI.parse(POST_URL)
+      params.merge!(passphrase: PASSPHRASE)
+      return Net::HTTP.post_form(uri, params)
+    end
   end
 end
