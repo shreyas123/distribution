@@ -10,6 +10,8 @@ require 'rspec/mocks'
 $LOAD_PATH << File.expand_path(File.dirname(__FILE__))
 $LOAD_PATH << File.expand_path(File.join(File.dirname(__FILE__), 'lib'))
 
+require_relative '../lib/zion'
+
 RSpec.configure do |config|
 
 end
