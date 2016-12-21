@@ -49,6 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   pry
   rspec
   rspec-html-matchers
