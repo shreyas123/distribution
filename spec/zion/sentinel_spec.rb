@@ -33,4 +33,18 @@ describe Zion::Sentinel do
       end
     end
   end
+
+  describe '#send_data' do
+    let(:obj) { described_class.new }
+    subject { obj.send_data(data) }
+    let(:data) { [{'node' => 'alpha', 'time' => '2030-12-31T22:00:01+09:00'}] }
+
+    it 'informs Zion about the data' do
+      http = double('hhtp', code_type: Net::HTTPCreated)
+      expect(obj).to receive(:inform_zion).with({ source: 'sentinels', start_node: 'alpha', end_node: 'alpha',
+                                                 start_time: '2030-12-31T14:00:01',
+                                                 end_time: '2030-12-31T14:00:01' }).and_return http
+      subject
+    end
+  end
 end
